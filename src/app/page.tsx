@@ -1,0 +1,25 @@
+import NeuralCanvas from "@/components/NeuralCanvas";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Clients from "@/components/Clients";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+
+export default function Home() {
+  return (
+    <>
+      <NeuralCanvas />
+      <Navbar />
+      <main className="relative z-10">
+        <Hero />
+        <Services />
+        <Clients />
+        <About />
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  );
+}
