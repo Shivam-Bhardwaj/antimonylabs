@@ -2,20 +2,27 @@
 
 const services = [
   {
-    number: "01",
-    title: "Robotics Systems",
+    category: "AI Infrastructure",
+    title: "Modern AI Systems",
     description:
-      "Custom robotic solutions for manufacturing, logistics, and research applications. From mechanical design to control systems integration.",
-    tags: ["Motion Control", "Kinematics", "ROS"],
+      "Deploy production-ready AI that actually works. From LLM integrations to computer vision pipelines, we build the intelligent systems your operations need—not science projects.",
+    capabilities: ["LLM Integration", "Computer Vision", "MLOps & Deployment", "Edge AI"],
     icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
+        <path d="M12 2a4 4 0 014 4v1a4 4 0 01-8 0V6a4 4 0 014-4z" />
+        <path d="M12 11v4M8 15h8M10 19h4" />
+        <circle cx="12" cy="6" r="1" fill="currentColor" />
+      </svg>
+    ),
+  },
+  {
+    category: "Hardware Engineering",
+    title: "Robotics & Automation",
+    description:
+      "Custom robotic systems designed for real-world manufacturing. Motion control, sensor integration, and autonomous systems that run 24/7 without babysitting.",
+    capabilities: ["Motion Control", "Custom Robotics", "Sensor Fusion", "System Integration"],
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
         <path d="M12 2L2 7l10 5 10-5-10-5z" />
         <path d="M2 17l10 5 10-5" />
         <path d="M2 12l10 5 10-5" />
@@ -23,61 +30,31 @@ const services = [
     ),
   },
   {
-    number: "02",
-    title: "AI & Machine Learning",
+    category: "AI Infrastructure",
+    title: "Data & ML Pipelines",
     description:
-      "Intelligent systems that learn and adapt. Computer vision, natural language processing, and predictive analytics tailored to your domain.",
-    tags: ["Computer Vision", "NLP", "MLOps"],
+      "Turn your data into competitive advantage. We build the infrastructure that lets you train, deploy, and iterate on AI models at scale—not just once, but continuously.",
+    capabilities: ["Data Engineering", "Model Training", "Real-time Inference", "Monitoring"],
     icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      >
-        <circle cx="12" cy="12" r="3" />
-        <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
+        <path d="M21 12c0 1.66-4.03 3-9 3s-9-1.34-9-3" />
+        <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
       </svg>
     ),
   },
   {
-    number: "03",
-    title: "Simulation & Digital Twins",
+    category: "Hardware Engineering",
+    title: "Embedded & Edge",
     description:
-      "High-fidelity simulations and digital twin environments for testing, validation, and optimization before physical deployment.",
-    tags: ["Physics Sim", "Visualization", "Testing"],
+      "Firmware and edge computing for when milliseconds matter. We build the low-level systems that power autonomous machines—RTOS, communication protocols, and beyond.",
+    capabilities: ["RTOS Development", "Firmware", "Edge Computing", "IoT Systems"],
     icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      >
-        <rect x="2" y="3" width="20" height="14" rx="2" />
-        <path d="M8 21h8M12 17v4" />
-      </svg>
-    ),
-  },
-  {
-    number: "04",
-    title: "Embedded Systems",
-    description:
-      "Custom firmware and embedded software for real-time applications. Sensor integration, communication protocols, and edge computing.",
-    tags: ["RTOS", "Firmware", "IoT"],
-    icon: (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-      >
-        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
+        <rect x="4" y="4" width="16" height="16" rx="2" />
+        <path d="M9 9h6v6H9z" />
+        <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3" />
       </svg>
     ),
   },
@@ -85,54 +62,116 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-32 px-6 md:px-12 max-w-[1400px] mx-auto">
-      <div className="flex justify-between items-end mb-16 gap-8 flex-wrap">
-        <div>
-          <div className="font-mono text-[0.7rem] text-accent tracking-[0.2em] uppercase mb-4 flex items-center gap-3">
-            <span className="w-2 h-2 bg-accent" />
-            What We Do
-          </div>
-          <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-bold tracking-[-0.02em] leading-[1.2]">
-            Research &<br />
-            Development Services
-          </h2>
-        </div>
-        <p className="max-w-[400px] text-text-secondary text-[0.95rem] leading-[1.7]">
-          From concept to deployment, we deliver end-to-end solutions that
-          transform industries.
-        </p>
-      </div>
+    <section id="services" className="relative py-28 px-6 md:px-12">
+      {/* Background accent */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/3 rounded-full blur-[200px] pointer-events-none" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {services.map((service) => (
-          <div
-            key={service.number}
-            className="bg-bg-secondary border border-border p-10 relative overflow-hidden transition-all duration-400 hover:border-border-bright hover:translate-y-[-4px] group before:absolute before:top-0 before:left-0 before:w-full before:h-0.5 before:bg-gradient-to-r before:from-accent before:to-accent-secondary before:scale-x-0 before:origin-left before:transition-transform before:duration-400 hover:before:scale-x-100"
-          >
-            <div className="font-mono text-[0.7rem] text-text-muted mb-6">
-              {service.number}
-            </div>
-            <div className="w-12 h-12 border border-border-bright flex items-center justify-center mb-6 text-accent">
-              {service.icon}
-            </div>
-            <h3 className="text-[1.4rem] font-semibold mb-4 tracking-[-0.01em]">
-              {service.title}
-            </h3>
-            <p className="text-text-secondary text-[0.9rem] leading-[1.7] mb-6">
-              {service.description}
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {service.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="font-mono text-[0.65rem] text-text-muted px-3 py-1.5 border border-border uppercase tracking-[0.05em]"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
+      <div className="max-w-[1200px] mx-auto relative z-10">
+        {/* Section header */}
+        <div className="text-center mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-soft border border-accent/20 mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+            <span className="font-mono text-xs text-accent tracking-wide uppercase">
+              What We Build
+            </span>
           </div>
-        ))}
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
+            Hardware meets AI
+          </h2>
+          <p className="text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
+            Most consultancies do one or the other. We do both—because modern
+            manufacturing demands systems that think <em>and</em> move.
+          </p>
+        </div>
+
+        {/* Two-column category labels */}
+        <div className="grid grid-cols-2 gap-4 mb-8 max-w-xl mx-auto">
+          <div className="text-center py-3 px-4 rounded-full bg-bg-card border border-border">
+            <span className="text-xs font-mono text-accent uppercase tracking-wider">
+              AI Infrastructure
+            </span>
+          </div>
+          <div className="text-center py-3 px-4 rounded-full bg-bg-card border border-border">
+            <span className="text-xs font-mono text-accent-secondary uppercase tracking-wider">
+              Hardware Engineering
+            </span>
+          </div>
+        </div>
+
+        {/* Services grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="group relative bg-bg-card rounded-2xl p-8 border border-border hover:border-border-bright transition-all duration-500 overflow-hidden text-center"
+            >
+              {/* Hover gradient */}
+              <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
+                service.category === "AI Infrastructure"
+                  ? "bg-gradient-to-br from-accent/5 via-transparent to-transparent"
+                  : "bg-gradient-to-br from-accent-secondary/5 via-transparent to-transparent"
+              }`} />
+
+              {/* Icon - centered */}
+              <div className="relative flex justify-center mb-6">
+                <div className={`w-14 h-14 rounded-xl border flex items-center justify-center transition-colors duration-500 ${
+                  service.category === "AI Infrastructure"
+                    ? "border-accent/20 text-accent group-hover:border-accent/40"
+                    : "border-accent-secondary/20 text-accent-secondary group-hover:border-accent-secondary/40"
+                }`}>
+                  {service.icon}
+                </div>
+              </div>
+
+              {/* Category tag */}
+              <div className="relative mb-4">
+                <span className={`text-xs font-mono uppercase tracking-wider ${
+                  service.category === "AI Infrastructure" ? "text-accent" : "text-accent-secondary"
+                }`}>
+                  {service.category}
+                </span>
+              </div>
+
+              {/* Content - centered */}
+              <div className="relative">
+                <h3 className="text-xl font-semibold mb-3 group-hover:text-text-primary transition-colors duration-300">
+                  {service.title}
+                </h3>
+                <p className="text-text-secondary text-sm leading-relaxed mb-6">
+                  {service.description}
+                </p>
+
+                {/* Capabilities - centered */}
+                <div className="flex flex-wrap justify-center gap-2">
+                  {service.capabilities.map((cap) => (
+                    <span
+                      key={cap}
+                      className="px-3 py-1 rounded-full bg-bg-secondary border border-border text-xs text-text-muted"
+                    >
+                      {cap}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="mt-12 text-center">
+          <p className="text-text-muted text-sm mb-4">
+            Not sure what you need? We&apos;ll help you figure it out.
+          </p>
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 text-accent text-sm font-medium hover:gap-3 transition-all duration-300"
+          >
+            Schedule a technical assessment
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   );

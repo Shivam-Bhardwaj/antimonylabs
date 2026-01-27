@@ -49,9 +49,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth w-full">
       <body
-        className={`${syne.variable} ${dmMono.variable} ${instrumentSerif.variable} antialiased`}
+        className={`${syne.variable} ${dmMono.variable} ${instrumentSerif.variable} antialiased w-full min-h-screen`}
       >
         {children}
       </body>
