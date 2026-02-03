@@ -57,18 +57,19 @@ export default function NeuralCanvas() {
       gradient.addColorStop(1, "rgba(0, 180, 216, 0.15)");
 
       nodesRef.current.forEach((node, i) => {
-        // Mouse interaction - subtle attraction
+        // Mouse interaction - aggressive attraction
         const dx = mouseRef.current.x - node.x;
         const dy = mouseRef.current.y - node.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < 200 && dist > 0) {
-          node.vx += (dx / dist) * 0.01;
-          node.vy += (dy / dist) * 0.01;
+        if (dist < 350 && dist > 0) {
+          const force = 0.08 * (1 - dist / 350); // Stronger force when closer
+          node.vx += (dx / dist) * force;
+          node.vy += (dy / dist) * force;
         }
 
         // Apply velocity with damping
-        node.vx *= 0.99;
-        node.vy *= 0.99;
+        node.vx *= 0.96;
+        node.vy *= 0.96;
         node.x += node.vx;
         node.y += node.vy;
 

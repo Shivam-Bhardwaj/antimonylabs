@@ -38,7 +38,7 @@ export default function Clients() {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-bg-primary via-bg-secondary to-bg-primary" />
 
-      <div className="max-w-[1100px] mx-auto relative z-10">
+      <div className="container-lg relative z-10">
         {/* Section header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-soft border border-accent/20 mb-6">
@@ -50,7 +50,7 @@ export default function Clients() {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
             Real results for <span className="gradient-text">real companies</span>
           </h2>
-          <p className="text-text-secondary text-lg max-w-xl mx-auto">
+          <p className="text-text-secondary text-lg max-w-xl mx-auto text-center text-balance">
             We don&apos;t do demos. We build systems that run in production, 24/7, at scale.
           </p>
         </div>

@@ -30,7 +30,7 @@ export default function About() {
       {/* Background elements */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-accent/3 rounded-full blur-[200px] pointer-events-none" />
 
-      <div className="max-w-[1100px] mx-auto relative z-10">
+      <div className="container-lg relative z-10">
         {/* Section header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-soft border border-accent/20 mb-6">
@@ -44,7 +44,7 @@ export default function About() {
             Engineers across <span className="gradient-text">6 countries</span>
           </h2>
 
-          <p className="text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
+          <p className="text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto text-center text-balance">
             We&apos;ve assembled a distributed team of specialists—roboticists, ML engineers,
             firmware developers, and systems architects—who&apos;ve built at companies like
             Tesla, Google, Boston Dynamics, and NVIDIA.

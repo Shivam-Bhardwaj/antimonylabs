@@ -17,7 +17,7 @@ export default function Hero() {
       <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-accent-secondary/5 rounded-full blur-[150px] pointer-events-none" />
 
-      <div className="max-w-[1100px] mx-auto w-full relative z-10 text-center">
+      <div className="container-lg w-full relative z-10 text-center">
         {/* Urgency badge */}
         <div
           className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gradient-to-r from-accent/10 to-accent-secondary/10 border border-accent/20 mb-8 opacity-0 animate-fade-slide-up"
@@ -54,7 +54,7 @@ export default function Hero() {
 
         {/* Value prop */}
         <p
-          className="max-w-[700px] mx-auto text-lg md:text-xl text-text-secondary leading-relaxed mb-10 opacity-0 animate-fade-slide-up"
+          className="container-sm text-lg md:text-xl text-text-secondary leading-relaxed mb-10 opacity-0 animate-fade-slide-up text-center text-balance"
           style={{ animationDelay: "0.5s" }}
         >
           We&apos;re a global team of engineers helping manufacturers and enterprises

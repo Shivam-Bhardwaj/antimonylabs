@@ -66,7 +66,7 @@ export default function Services() {
       {/* Background accent */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/3 rounded-full blur-[200px] pointer-events-none" />
 
-      <div className="max-w-[1200px] mx-auto relative z-10">
+      <div className="container-xl relative z-10">
         {/* Section header */}
         <div className="text-center mb-6">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent-soft border border-accent/20 mb-6">
@@ -78,7 +78,7 @@ export default function Services() {
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
             Hardware meets AI
           </h2>
-          <p className="text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
+          <p className="text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto text-center text-balance">
             Most consultancies do one or the other. We do both—because modern
             manufacturing demands systems that think <em>and</em> move.
           </p>

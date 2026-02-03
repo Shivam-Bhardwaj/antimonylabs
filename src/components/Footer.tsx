@@ -19,7 +19,7 @@ const footerLinks = {
 export default function Footer() {
   return (
     <footer className="relative py-16 px-6 md:px-12 border-t border-border">
-      <div className="max-w-[1100px] mx-auto">
+      <div className="container-lg">
         {/* Main footer content - centered */}
         <div className="text-center mb-12">
           {/* Brand */}
@@ -36,7 +36,7 @@ export default function Footer() {
               </span>
             </div>
           </Link>
-          <p className="text-text-secondary text-sm leading-relaxed max-w-md mx-auto">
+          <p className="text-text-secondary text-sm leading-relaxed max-w-md mx-auto text-center text-balance">
             Advanced research and development in robotics and AI.
             Building intelligent systems for industry leaders.
           </p>

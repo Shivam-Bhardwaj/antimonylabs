@@ -9,7 +9,7 @@ export default function Contact() {
       <div className="absolute bottom-0 left-1/4 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[200px] pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-accent-secondary/5 rounded-full blur-[150px] pointer-events-none" />
 
-      <div className="max-w-[700px] mx-auto relative z-10">
+      <div className="container-sm relative z-10">
         {/* Main CTA card */}
         <div className="relative bg-bg-card rounded-3xl border border-border p-10 md:p-14 text-center overflow-hidden">
           {/* Decorative gradient border effect */}
@@ -21,7 +21,7 @@ export default function Contact() {
               Ready to move fast?
             </h2>
 
-            <p className="text-text-secondary text-lg max-w-md mx-auto mb-8 leading-relaxed">
+            <p className="text-text-secondary text-lg max-w-md mx-auto mb-8 leading-relaxed text-center text-balance">
               Tell us what you&apos;re building. We&apos;ll tell you how we can help—no
               sales pitch, just engineers talking to engineers.
             </p>

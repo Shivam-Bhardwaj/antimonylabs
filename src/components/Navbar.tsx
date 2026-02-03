@@ -20,7 +20,7 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-[1400px] mx-auto flex justify-between items-center">
+      <div className="container-2xl flex justify-between items-center">
         <Link href="/" className="flex items-center gap-3 no-underline group">
           <div className="relative">
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent to-accent-secondary flex items-center justify-center font-serif text-lg italic text-bg-primary font-medium">

@@ -27,7 +27,7 @@ export default function WhyNow() {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-bg-secondary via-bg-primary to-bg-primary" />
 
-      <div className="max-w-[1100px] mx-auto relative z-10">
+      <div className="container-lg relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 mb-6">
@@ -39,7 +39,7 @@ export default function WhyNow() {
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
             Why companies are moving <span className="text-orange-400">now</span>
           </h2>
-          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+          <p className="text-text-secondary text-lg max-w-2xl mx-auto text-center text-balance">
             This isn&apos;t hype. The companies that integrate AI into their operations
             today will define their industries tomorrow. The ones that wait will struggle to catch up.
           </p>
